@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADAMBAKKAM</title>
+    <style>
+        body{
+            background-color: rgb(167, 82, 233);
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+    <h1>ADAMBAKKAM</h1>
+    <img src="{% static 'Adambakkam.jpg' %}" style="width: 1000px;height: 400px; border: 10px solid rgb(52, 8, 101) ;border-radius: 20px;">
+<p style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: x-large;">Adambakkam is a neighbourhood of Chennai, India. It is primarily a residential locality situated in South Chennai. Adambakkam area comes under Velachery taluk and Alandur taluk, Chennai District of Chennai Corporation. Adambakkam is surrounded by areas namely, Alandur in the North-West, Nanganallur in the West, Madipakkam in the South, Velachery in the East and Guindy in the North. Earlier, one part of Adambakkam was under the direct governance of Chennai Corporation. From October 2011 onwards, the entire area was merged with the Chennai Corporation.Upon completion of the MRTS extension line, the neighbourhood will be served by Adambakkam railway station. Its Proximity to commercial localities like Velachery, accessible railway stations, Metro Stations and road transport routes makes Adambakkam an ideal choice of location to live.</p>
+<br>
+<a href="{% url 'map' %}">Click here to go to main page</a> </center>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRT</title>
+    <style>
+        body{
+            background-color: rgb(225, 170, 51);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>GRT</h1>
+    <img src="{% static 'grt.jpg' %}" style="width: 700px;height: 400px;border: 10px solid rgb(228, 128, 40); border-radius: 20px;">
+<br>
+<p style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: x-large;">GRT Jewellers, a leading Indian jewelry brand founded in 1964 known for its wide collection of gold, silver, platinum, and diamond jewelry, and GRT Hotels & Resorts, a chain of premium hotels in South India offering modern amenities and focusing on creativity and sustainability.GRT Jewellers
+What they are: A well-known Indian jeweller with numerous showrooms across India and one in Singapore. 
+History: Founded in 1964 by Shri G. Rajendran in Madras (now Chennai). 
+Products: Offers gold, silver, platinum, and diamond jewelry, including coins, solitaires, and corporate gifts. 
+Focus: Blends traditional craftsmanship with modern design and is committed to customer satisfaction and providing an exceptional shopping experience.  </p>
+<br>
+<a href="{% url 'map' %}">Click here to go to main page</a> </center>
+</body>
+</html>

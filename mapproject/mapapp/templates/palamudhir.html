@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pazhamudhir Cholai</title>
+    <style>
+        body{
+            background-color: rgb(206, 218, 38);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Pazhamudhir Cholai</h1>
+    <img src="{% static 'pala.jpg' %}"style="width: 700px;height: 400px;">
+<p style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: x-large;">
+Kovai Pazhamudir Nilayam is proud to open our doors in CP .Pazhamudhir Cholai shops, like KPN Farm Fresh, are a popular chain of retail stores in Tamil Nadu, primarily known for selling fresh fruits, vegetables, rice, and other grocery staples. They offer convenience, a wide variety of products including regional favourites and imported items, and often provide a user-friendly app for online orders and quick delivery. These shops serve as a one-stop destination for daily essentials, aiming for customer satisfaction through quality products and efficient service. </p>
+<br>
+<a href="{% url 'map' %}">Click here to go to main page</a> </center>
+</body>
+</html>

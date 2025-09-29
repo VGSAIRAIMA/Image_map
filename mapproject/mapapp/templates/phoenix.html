@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOENIX MALL</title>
+    <style>
+        body{
+            background-color: rgb(71, 149, 200);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>PHOENIX MALL</h1>
+    <img src="{% static 'ph.jpg' %}" style="width: 700px;height: 400px;">
+<br>
+<p style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: x-large;">Phoenix Marketcity is a shopping mall developed by Phoenix Mills Limited located in Chennai, Tamil Nadu, India. It was opened in January 2013[1] and is the 2nd largest mall in the city. It was the fourth largest mall in India in 2018.
+
+It has a built up area of 1,000,000 square feet. Also there is a Palladium mall situated right next to it.This mall was jointly developed by Phoenix Mills Limited and Crest Ventures Ltd. Phoenix Mall Chennai is part of a development which includes a premium residential space as part of Phase I. Phase II development includes a luxury mall called Palladium and residential space. </p>
+<br>
+<a href="{% url 'map' %}">Click here to go to main page</a> </center>
+</body>
+</html>

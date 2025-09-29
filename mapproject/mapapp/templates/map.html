@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image map</title>
+    <style>
+        body{
+            background-color: rgb(96, 192, 226);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 style="color: blue;">ADAMBAKKAM</h1>
+    <p>click the places you wish to know about it 👆🏼</p>
+    <img src="{% static 'map.png' %}" usemap="#map" style="width: 1600px; height: 600px;">
+    <map name="map">
+    <area shape="rect" coords="1250,400,1600,500" href="{% url 'grt' %}" title="GRT">
+    <area shape="rect" coords="560,200,760,300" href="{% url 'adm' %}" title="ADAMBAKKAM">
+    <area shape="rect" coords="1200,50,1600,100" href="{% url 'phoenix' %}" title="PHOENIX">
+    <area shape="rect" coords="360,90,500,170" href="{% url 'pala' %}" title="Pazhamudhir Cholai">
+    <area shape="rect" coords="1000,0,1200,100" href="{% url 'rmkv' %}" title="RMKV SILKS">
+</map>
+</center>
+</body>
+</html>
